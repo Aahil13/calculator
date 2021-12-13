@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background-color:  hsl(222, 26%, 31%);
+    color: white;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 20% 30% 50%;
+    grid-row-gap: 1rem;
+    padding-bottom: 8rem;
+    width: max-content;
+    margin: 2rem auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top p{
+    word-spacing: .5rem;
+}
+
+.top p:hover{
+    cursor: pointer;
+}
+
+.right-nav{
+    display: flex;
+}
+
+.left{
+    margin: 0 .8rem;
+    display: flex;
+    align-self: flex-end;
+}
+
+.toggle-box{
+    background-color: hsl(223, 31%, 20%);
+    height: 18px;
+    width: 50px;
+    border-radius: 1rem;
+    display: flex;
+    padding: 0 .5rem;
+}
+
+.inner-circle{
+    clip-path: circle();
+    background-color: hsl(6, 63%, 50%);
+    height: 18px;
+    width: 11.7px;
+}
+
+.screen{
+    background-color: hsl(224, 36%, 15%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: .8rem;
+    padding-right: 2rem;
+}
+
+.numbers{
+    background-color:  hsl(224, 28%, 24%);
+    border-radius: .8rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
+    justify-items: center;
+    height: fit-content;
+}
+
+.numbers div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .3rem;
+}
+
+div.no{
+    background-color:   hsl(30, 25%, 89%);
+    box-shadow: 0px 3px 1px  hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%); 
+}
+
+.div1 div, .div2 div, .div3 div, .div4 div{
+    width: 4.5rem;
+    height: 3rem;
+    border-radius: .5rem;
+}
+
+.numbers div p{
+    font-weight: bold;
+}
+
+.div5{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 0 ;
+    justify-content: space-around;
+}
+
+.div5 div{
+    width: 9.5rem;
+    height: 3rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 .del{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px 1px  hsl(225, 21%, 49%);
+}
+
+.div1 .del p{
+    color: white;
+}
+
+.reset{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px 1px hsl(224, 28%, 35%);
+}
+
+.reset button{
+    background-color: hsl(225, 21%, 49%);
+    border: none;
+}
+
+.reset button a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.equate{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 3px 1px hsl(6, 70%, 34%);
+}
+
+.equate button{
+    background-color: hsl(6, 63%, 50%);
+    border: none;
+}
+
+.equate button a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Answer{
+    display: flex;
+    align-self: flex-end;
+}
+
+@media(max-width:375px){
+    body{
+        font-size: 12px;
+    }
+    .numbers{
+        grid-gap: .5rem;
+    }
+    .numbers div{
+        margin: 0 .2rem;
+        width: fit-content;
+    }
+    .div5 div{
+        width: 7.5rem;
+    }
+    .div1 div, .div2 div, .div3 div, .div4 div{
+        width: 3.5rem;
+        height: 3rem;
+        border-radius: .5rem;
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color:hsl(25, 98%, 40%);
+    text-decoration: none;
+}
+
+/* for different colors */
+
+.lightBack{
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(60, 10%, 19%);
+}
+.lighttoggler{
+    justify-content: center;
+    background-color: hsl(0, 5%, 81%);
+}
+.lightnumbers{
+    background-color: hsl(0, 5%, 81%);
+}
+.lightkeypad{
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 3px 1px  hsl(35, 11%, 61%);
+}
+.lightscreen{
+    background-color:  hsl(0, 0%, 93%);
+}
+.lightdel{
+    background-color: hsl(185, 42%, 37%) !important;
+    box-shadow: 0px 3px 1px  hsl(185, 58%, 25%) !important;
+}
+.lightreset{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 3px 1px hsl(185, 58%, 25%);
+}
+.lightresetbutton{
+    background-color: hsl(185, 42%, 37%) !important;
+}
+
+.lightequate{
+    background-color: hsl(25, 98%, 40%)!important;
+    box-shadow: 0px 3px 1px   hsl(25, 99%, 27%) !important;
+}
+
+.purpleBack{
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+}
+.purpletoggler{
+    justify-content: flex-end;
+    background-color: hsl(268, 71%, 12%);
+}
+.purplenumbers{
+    background-color: hsl(268, 71%, 12%);
+}
+.purplescreen{
+    background-color:  hsl(268, 71%, 12%);
+}
+.purpledel{
+    background-color: hsl(281, 89%, 26%) !important;
+    box-shadow: 0px 3px 1px  hsl(285, 91%, 52%) !important;
+}
+.purplereset{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 3px 1px hsl(285, 91%, 52%);
+}
+.purpleresetbutton{
+    background-color: hsl(281, 89%, 26%)!important;
+}
+div.no.purplekeypad{
+    background-color: hsl(268, 47%, 21%) !important;
+    box-shadow: 0px 3px 1px  hsl(290, 70%, 36%) !important;
+    color: hsl(52, 100%, 62%);
+}
+.purpleequatebutton{
+    background-color: hsl(176, 100%, 44%)!important;
+}
+.purpleequate{
+    background-color: hsl(176, 100%, 44%)!important;
+    box-shadow: 0px 3px 1px   hsl(177, 92%, 70%) !important;
+}

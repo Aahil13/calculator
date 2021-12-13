@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="nav">
+        <div class="logo-box">
+          <h1>Aahil's calc</h1>
+        </div>
+        <div class="right-nav">
+          <div class="left">
+            <p>THEME</p>
+          </div>
+          <div class="right">
+            <div class="top">
+              <p onclick="darkTheme()">1</p>
+              <p onclick="lightTheme()">2</p>
+              <p onclick="purpleTheme()">3</p>
+            </div>
+            <div class="toggle-box">
+              <div class="inner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="screen">
+        <h1 class="question">0</h1>
+        <h2 class="Answer"></h2>
+      </div>
+      
+      <div class="numbers">
+        <div class="div1">
+          <div class="no 7">
+            <p>7</p>
+          </div>
+          <div class="no">
+            <p>8</p>
+          </div>
+          <div class="no">
+            <p>9</p>
+          </div>
+          <div onclick="removeNumber()" class="del">
+            <p>DEL</p>
+          </div>
+        </div>
+      
+        <div class="div2">
+          <div class="no">
+            <p>4</p>
+          </div>
+          <div class="no">
+            <p>5</p>
+          </div>
+          <div class="no">
+            <p>6</p>
+          </div>
+          <div class="no">
+            <p>+</p>
+          </div>
+        </div>
+      
+        <div class="div3">
+          <div class="no">
+            <p>1</p>
+          </div>
+          <div class="no">
+            <p>2</p>
+          </div>
+          <div class="no">
+            <p>3</p>
+          </div>
+          <div class="no">
+            <p>-</p>
+          </div>
+        </div>
+      
+        <div class="div4">
+          <div class="no">
+            <p>.</p>
+          </div>
+          <div class="no">
+            <p>0</p>
+          </div>
+          <div class="no">
+            <p>/</p>
+          </div>
+          <div class="no">
+            <p>*</p>
+          </div>
+        </div>
+        <div class="div5">
+          <div onclick="reload()" class="reset">
+            <button>
+              <a href="#">Reset</a>
+            </button>
+          </div>
+          <div onclick="result()" class="equate">
+            <button>
+              <a href="#">=</a>
+            </button>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://aahil13.github.io/personal-site">Onyeanuna Prince</a>.
+  </div>
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
