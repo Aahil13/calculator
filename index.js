@@ -7,6 +7,20 @@ for (let i = 0; i < document.querySelectorAll(".no").length; i++) {
        var input = this.innerText; 
       //  pushes the innertext gotten into an array clickedArray
        clickedArray.push(input)
+      // this reduces the font-size of text in the calculator screen
+       if(clickedArray.length >= 12){
+           document.querySelector(".screen h1").classList.add("minimize-text")
+       }
+       else{
+          document.querySelector(".screen h1").classList.remove("minimize-text")
+       }
+       // this reduces the font-size of text in the calculator screen further
+       if(clickedArray.length >= 25){
+           document.querySelector(".screen h1").classList.add("minimize-text-further")
+       }
+       else{
+          document.querySelector(".screen h1").classList.remove("minimize-text-further")
+       }
       //  targets the h1/display and shows the array without commas, hence join('')
        document.querySelector(".screen h1").innerText = clickedArray.join('')
     })
