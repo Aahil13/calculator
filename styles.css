@@ -78,11 +78,19 @@ body{
 
 .screen{
     background-color: hsl(224, 36%, 15%);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     border-radius: .8rem;
-    padding-right: 2rem;
+    padding-right: .5rem;
+    text-align: right;
+    display: grid;
+    align-items: center;
+}
+
+.question{
+    align-self: end;
+}
+
+.Answer{
+    display: block !important;
 }
 
 .numbers{
@@ -180,10 +188,6 @@ div.no{
     text-transform: uppercase;
 }
 
-.Answer{
-    display: flex;
-    align-self: flex-end;
-}
 
 @media(max-width:375px){
     body{

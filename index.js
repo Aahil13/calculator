@@ -10,9 +10,11 @@ for (let i = 0; i < document.querySelectorAll(".no").length; i++) {
       // this reduces the font-size of text in the calculator screen
        if(clickedArray.length >= 12){
            document.querySelector(".screen h1").classList.add("minimize-text")
+           document.querySelector(".screen h2").classList.add("minimize-text")
        }
        else{
           document.querySelector(".screen h1").classList.remove("minimize-text")
+          document.querySelector(".screen h2").classList.remove("minimize-text")
        }
        // this reduces the font-size of text in the calculator screen further
        if(clickedArray.length >= 25){
