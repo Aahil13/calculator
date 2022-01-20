@@ -48,7 +48,9 @@ function result () {
 
 // a function which reloads the page to remove the numbers from the screen
 function reload() {
-   window.location.reload()
+   clickedArray = [];
+   document.querySelector(".screen h1").innerText = ''
+   document.querySelector(".screen h2").innerText = ''
 }
 
 // for the styling/toggling section of the calculator
