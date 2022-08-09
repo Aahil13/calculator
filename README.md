@@ -23,8 +23,7 @@ Users should be able to:
 - Adjust the color theme based on their preference
 
 ### Screenshot
-
-![](./screenshot.jpg)
+![calc-img](https://user-images.githubusercontent.com/63567230/183701930-b975e82a-ec98-4f3c-9055-4e8a8a34abd1.JPG)
 
 ### Links
 
