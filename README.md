@@ -24,8 +24,6 @@ Users should be able to:
 
 ### Screenshot
 ![calc-img](https://user-images.githubusercontent.com/63567230/183701930-b975e82a-ec98-4f3c-9055-4e8a8a34abd1.JPG)
-![purple-calc](https://user-images.githubusercontent.com/63567230/183702193-cb148baa-cc91-4ba0-b85b-550212825d05.JPG)
-![white-calc](https://user-images.githubusercontent.com/63567230/183702425-46386322-c069-4285-b1dd-106ea2de0b48.JPG)
 
 ### Links
 
